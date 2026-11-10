@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Murach's Java Servlet and JSP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src = "images/images.png" style = "width: 150px; height: 150px">
+    <h1>Survey</h1>
+    If you have a moment, we'd appreciate it if you would fill out this survey.
+    <h1>Your information</h1>
+    <form action = "emailList" method = "post">
+        <input type="hidden" name="action" value="add">
+
+        <label>First Name</label>
+        <input type = "text" name = "firstName" required><br>
+
+        <label>Last Name</label>
+        <input type = "text" name = "lastName" required><br>
+
+        <label>Email</label>
+        <input type = "email" name = "email" required><br>
+
+        <label>Date of Birth</label>
+        <input type = "date" name = "dob" required><br>
+
+        <h1>How did you hear about us?</h1>
+
+        <div class = "radio-group">
+            <input type = "radio" id = "searchEngine" name = "whereuHear" value = "Search engine">
+            <label for = "searchEngine">Search Engine</label>
+
+            <input type = "radio" id = "wordOfMouth" name = "whereuHear" value = "Word of mouth">
+            <label for = "wordOfMouth">Word of mouth</label>
+
+            <input type = "radio" id = "socialMedia" name = "whereuHear" value = "Social Media">
+            <label for = "socialMedia">Social Media</label>
+
+            <input type = "radio" id = "other" name = "whereuHear" value = "Other">
+            <label for = "other">Other</label>
+        </div>
+
+        <h1>Would you like to receive announcements about new CDs and special offers?</h1>
+        <div class = "check-box">
+            <input type = "checkbox" id = "yes1" name = "agreement" value = "YES, I'd like that.">
+            <label for = "yes1" >YES, I'd like that.</label>
+
+            <br>
+            <input type = "checkbox" id = "yes2" name = "agreement" value = "YES, please send notification to my Email">
+            <label for = "yes2">YES, please send notification to my Email.</label>
+        </div>
+        <br>
+        <label for = "choose">Please contact me by:</label>
+        <div class = "select-box">
+            <select name = "choose" id = "choose">
+                <option value = "email-or-postal">Email or postal mail</option>
+
+                <option value = "email">Email only</option>
+
+                <option value = "postal">Postal only</option>
+            </select>
+        </div>
+
+        <br>
+        <label>&nbsp</label>
+        <input type = "submit" value = "Submit" id = "submit">
+    </form>
+
+</body>
+</html>
